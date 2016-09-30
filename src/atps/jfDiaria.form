@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="btngTipoDormitorio">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="DIARIAS"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <Events>
+    <EventHandler event="windowClosing" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowClosing"/>
+    <EventHandler event="windowOpened" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowOpened"/>
+  </Events>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jpnlPaineControle" alignment="0" max="32767" attributes="0"/>
+                  <Component id="jpClientes" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="btnFechar" min="-2" pref="110" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jpInfoCliente" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jpCalcDiaria" pref="396" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="jpInfoQuarto" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="283" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jpClientes" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jpCalcDiaria" pref="123" max="32767" attributes="0"/>
+                          <Component id="jpInfoCliente" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jpInfoQuarto" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jpnlPaineControle" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="btnFechar" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="btnFechar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Fechar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnFecharActionPerformed"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JPanel" name="jpnlPaineControle">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Painel de Controle"/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jbtnAdcReg" min="-2" pref="144" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jbtnCarrReg" min="-2" pref="150" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jbtnRemReg" min="-2" pref="144" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jbtnAttReg" min="-2" pref="150" max="-2" attributes="0"/>
+                  <EmptySpace pref="228" max="32767" attributes="0"/>
+                  <Component id="jbtnCalcular" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jbtnAdcReg" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jbtnCarrReg" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jbtnRemReg" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jbtnAttReg" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jbtnCalcular" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="jbtnAdcReg">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Adicionar Registro"/>
+            <Property name="toolTipText" type="java.lang.String" value="Adiciona o Registro &#xe0; Tabela"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnAdcRegActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jbtnCarrReg">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Carregar Registro"/>
+            <Property name="toolTipText" type="java.lang.String" value="Carrega o Registro SELECIONADO para Edi&#xe7;&#xe3;o"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnCarrRegActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jbtnRemReg">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Remover Registro"/>
+            <Property name="toolTipText" type="java.lang.String" value="Remove Registro SELECIONADO"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnRemRegActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jbtnAttReg">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Atualizar Registro"/>
+            <Property name="toolTipText" type="java.lang.String" value="Atualiza registro SELECIONADO com as informa&#xe7;&#xf5;es dos campos"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnAttRegActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jbtnCalcular">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Finalizar Hospedagem"/>
+            <Property name="toolTipText" type="java.lang.String" value="Calcula o Valor das Di&#xe1;rias"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnCalcularActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jpInfoQuarto">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Informa&#xe7;&#xf5;es do Quarto"/>
+          </Border>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value="Informa&#xe7;&#xf5;es do Quarto"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="jlValorQuarto" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jlTipoQuarto" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jlDescQuarto" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jlNumQuarto" alignment="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="jtfDescQuarto" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jtfValorQuarto" min="-2" pref="120" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                                  <Component id="jbtnCalcSubTtl" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="jlSubVlrTtl" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jtfVlrSubTtl" min="-2" pref="120" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="jtfTipoQuarto" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jtfNumQuarto" alignment="0" pref="75" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jlAndarQuarto" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="jtfAndarQuarto" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jrbtnQuarto" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="jrbtnChale" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="jlCamas" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jcbxNumCamas" min="-2" pref="80" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="377" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jlDescQuarto" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jtfDescQuarto" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jlNumQuarto" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jtfNumQuarto" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jlAndarQuarto" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jtfAndarQuarto" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jlTipoQuarto" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jtfTipoQuarto" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jrbtnQuarto" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jrbtnChale" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jlCamas" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jcbxNumCamas" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jlValorQuarto" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jbtnCalcSubTtl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jlSubVlrTtl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jtfValorQuarto" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jtfVlrSubTtl" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jlDescQuarto">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Descri&#xe7;&#xe3;o:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jlNumQuarto">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="N&#xba;:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jtfDescQuarto">
+          <Properties>
+            <Property name="toolTipText" type="java.lang.String" value="Descri&#xe7;&#xe3;o do Quarto"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jtfNumQuarto">
+          <Properties>
+            <Property name="toolTipText" type="java.lang.String" value="N&#xfa;mero do Quarto"/>
+          </Properties>
+          <Events>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jtfNumQuartoFocusLost"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jtfNumQuartoActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jlAndarQuarto">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Andar:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jtfAndarQuarto">
+          <Properties>
+            <Property name="toolTipText" type="java.lang.String" value="Andar do Quarto"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jlTipoQuarto">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Tipo:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jtfTipoQuarto">
+          <Properties>
+            <Property name="toolTipText" type="java.lang.String" value="Tipo de Quarto"/>
+            <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jlValorQuarto">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Valor Diaria:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jrbtnQuarto">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Quarto"/>
+            <Property name="toolTipText" type="java.lang.String" value="Selecionar tipo Quarto"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jrbtnQuartoActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jrbtnChale">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Chal&#xe9; (+ 20%)"/>
+            <Property name="toolTipText" type="java.lang.String" value="Selecionar tipo Chal&#xe9; com aumento de 20% no valor da Di&#xe1;ria"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jrbtnChaleActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jlCamas">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Camas Adicionais:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="jcbxNumCamas">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="6">
+                <StringItem index="0" value="0"/>
+                <StringItem index="1" value="1 +10%"/>
+                <StringItem index="2" value="2 +20%"/>
+                <StringItem index="3" value="3 +30%"/>
+                <StringItem index="4" value="4 +40%"/>
+                <StringItem index="5" value="5 +50%"/>
+              </StringArray>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Selecionar quantidade de camas adicionais com aumento de 10% para cada nova cama"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jbtnCalcSubTtl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sub-Total Diaria"/>
+            <Property name="toolTipText" type="java.lang.String" value="Calcular Sub-Total da Diaria"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnCalcSubTtlActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jlSubVlrTtl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sub-Total Diaria:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JFormattedTextField" name="jtfValorQuarto">
+          <Properties>
+            <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+              <Format format="R$ *************" subtype="-1" type="5"/>
+            </Property>
+            <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JFormattedTextField" name="jtfVlrSubTtl">
+          <Properties>
+            <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+              <Format format="R$ ************" subtype="-1" type="5"/>
+            </Property>
+            <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jtxaNota">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[164, 117]"/>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jpInfoCliente">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Informa&#xe7;&#xf5;es do Cliente"/>
+          </Border>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value="Informa&#xe7;&#xf5;es do Cliente"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="jlTelCli" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jlRGCli" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jlNomeCli" alignment="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jtfRGCli" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jtfTelCli" alignment="0" pref="100" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jlDatNascCli" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jtfDatNasc" pref="53" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jlCPFCli" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jtfCPFCli" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Component id="jtfNomeCli" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jlNomeCli" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jtfNomeCli" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jlRGCli" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jlCPFCli" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jtfRGCli" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jtfCPFCli" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jlTelCli" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jlDatNascCli" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jtfTelCli" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jtfDatNasc" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jlNomeCli">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Nome:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jlRGCli">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="RG:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jlTelCli">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Tel:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jlCPFCli">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="CPF:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jlDatNascCli">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Data Nasc.:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jtfNomeCli">
+          <Properties>
+            <Property name="toolTipText" type="java.lang.String" value="Nome do Cliente"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JFormattedTextField" name="jtfRGCli">
+          <Properties>
+            <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+              <Format format="##.###.###-#" subtype="-1" type="5"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JFormattedTextField" name="jtfCPFCli">
+          <Properties>
+            <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+              <Format format="###.###.###-##" subtype="-1" type="5"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JFormattedTextField" name="jtfTelCli">
+          <Properties>
+            <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+              <Format format="(##)#####-####" subtype="-1" type="5"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JFormattedTextField" name="jtfDatNasc">
+          <Properties>
+            <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+              <Format format="##/##/####" subtype="-1" type="5"/>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jpCalcDiaria">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Diaria"/>
+          </Border>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value="Calculo da Diaria"/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[351, 117]"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="jlDatSaida" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="jlDatEntrada" alignment="1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jtfDatEntrada" alignment="0" pref="80" max="32767" attributes="0"/>
+                              <Component id="jtfDatSaida" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="jlHorEntrada" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="jlHorSaida" alignment="1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jtfHorEntrada" alignment="0" pref="28" max="32767" attributes="0"/>
+                              <Component id="jtfHorSaida" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jlDoisPntsI" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jtfMinEntrada" min="-2" pref="28" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jlDoisPntsII" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jtfMinSaida" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="jlVlrTotal" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jlRCifrao" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jlVlrTtlMostra" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jlDatEntrada" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jlHorEntrada" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jtfHorEntrada" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jlDoisPntsI" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jtfMinEntrada" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jtfDatEntrada" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jlDatSaida" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jlHorSaida" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jtfHorSaida" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jlDoisPntsII" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jtfMinSaida" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jtfDatSaida" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                          <Component id="jlVlrTotal" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jlRCifrao" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="jlVlrTtlMostra" alignment="1" min="-2" pref="14" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jlDatEntrada">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Data Entrada:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jlDatSaida">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Data Sa&#xed;da:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jlHorEntrada">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Hora Entrada:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jlHorSaida">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Hora Sa&#xed;da:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JFormattedTextField" name="jtfHorEntrada">
+          <Properties>
+            <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+              <Format format="##" subtype="-1" type="5"/>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Hora de Entrada do Cliente"/>
+            <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jtfHorEntradaFocusGained"/>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jtfHorEntradaFocusLost"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JFormattedTextField" name="jtfHorSaida">
+          <Properties>
+            <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+              <Format format="##" subtype="-1" type="5"/>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Hora de Sa&#xed;da do Cliente"/>
+            <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jtfHorSaidaFocusGained"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jtfHorSaidaActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jlDoisPntsI">
+          <Properties>
+            <Property name="text" type="java.lang.String" value=":"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jlDoisPntsII">
+          <Properties>
+            <Property name="text" type="java.lang.String" value=":"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JFormattedTextField" name="jtfMinEntrada">
+          <Properties>
+            <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+              <Format format="##" subtype="-1" type="5"/>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Minutos de Entrada do Cliente"/>
+            <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jtfMinEntradaFocusGained"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JFormattedTextField" name="jtfMinSaida">
+          <Properties>
+            <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+              <Format format="##" subtype="-1" type="5"/>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Minutos de Sa&#xed;da do Cliente"/>
+            <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jtfMinSaidaFocusGained"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jtfMinSaidaActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jlVlrTotal">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="11" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="TOTAL:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jlRCifrao">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="11" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="R$"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jlVlrTtlMostra">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="11" style="1"/>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Pre&#xe7;o a ser pago!"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JFormattedTextField" name="jtfDatEntrada">
+          <Properties>
+            <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+              <Format format="##/##/####" subtype="-1" type="5"/>
+            </Property>
+            <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JFormattedTextField" name="jtfDatSaida">
+          <Properties>
+            <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+              <Format format="##/##/####" subtype="-1" type="5"/>
+            </Property>
+            <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jpClientes">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Clientes"/>
+          </Border>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value="Lista de Clientes"/>
+        <Property name="name" type="java.lang.String" value="jpClientes" noResource="true"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="jScrollPane3" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jScrollPane3" pref="155" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTable" name="jtTable">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                  <Table columnCount="16" rowCount="0">
+                    <Column editable="false" title="#" type="java.lang.Integer"/>
+                    <Column editable="false" title="Nome do Cliente" type="java.lang.String"/>
+                    <Column editable="false" title="Valor Inicial da Diaria " type="java.lang.String"/>
+                    <Column editable="false" title="Data de Entrada " type="java.lang.String"/>
+                    <Column editable="false" title="CPF do Cliente" type="java.lang.String"/>
+                    <Column editable="false" title="Telefone do Cliente" type="java.lang.String"/>
+                    <Column editable="false" title="RG do Cliente" type="java.lang.String"/>
+                    <Column editable="false" title="Data Nascimento" type="java.lang.String"/>
+                    <Column editable="false" title="Descri&#xe7;&#xe3;o do Quarto" type="java.lang.String"/>
+                    <Column editable="false" title="Numero do Quarto " type="java.lang.String"/>
+                    <Column editable="false" title="Andar do Quarto " type="java.lang.String"/>
+                    <Column editable="false" title="Tipo de Quarto " type="java.lang.String"/>
+                    <Column editable="false" title="Hora de Entrada  " type="java.lang.String"/>
+                    <Column editable="false" title="Minutos de Entrada " type="java.lang.String"/>
+                    <Column editable="false" title="Quantidade de Camas" type="java.lang.String"/>
+                    <Column editable="false" title="Valor Total da Diaria" type="java.lang.String"/>
+                  </Table>
+                </Property>
+                <Property name="autoResizeMode" type="int" value="0"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
