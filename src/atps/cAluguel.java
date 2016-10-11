@@ -1,7 +1,6 @@
 package atps;
 
 import java.math.BigDecimal;
-import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
@@ -20,7 +19,6 @@ public class cAluguel {
     private int diarias1;
 
     public BigDecimal calc_diaria_dia(Date dataInicial, Date dataFinal) {
-        SimpleDateFormat sdf0 = new SimpleDateFormat("dd/MM/yyyy");
         long aux0 = 24L * 60L * 60L * 1000L;
         long aux1 = ((dataFinal.getTime() - dataInicial.getTime()) / aux0);
 //
